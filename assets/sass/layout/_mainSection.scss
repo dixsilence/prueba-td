@@ -1,0 +1,15 @@
+ i.fab {
+     color: $negro;
+     font-size: 4rem;
+ }
+ 
+ #rrss {
+     background-color: $cafeclaro;
+ }
+ 
+ @media (min-width:764px) {
+     .titulo__productora {
+         width: 100%;
+         text-align: center;
+     }
+ }

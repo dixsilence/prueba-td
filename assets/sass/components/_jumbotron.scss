@@ -1,0 +1,119 @@
+    /*Main*/
+    
+    #myVideo {
+        min-width: 100vw;
+        min-height: 100%;
+    }
+    
+    .contenedor__video {
+        position: absolute;
+        left: -80vw;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        // overflow: hidden;
+        z-index: -99;
+    }
+    
+    .jumbotron {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100vw;
+        height: 90vh;
+        /*Acá hay que poner el alto del viewport para que cubra toda la primera pantalla, restando la altura del nabar que es como 10vh*/
+        border-radius: 0px;
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+    
+    //Logo 
+    .logo__header {
+        width: 50vw;
+        margin-bottom: 3rem;
+    }
+    
+    //Caja de texto
+    .texto__principal {
+        background-color: rgba(214, 214, 214, 0.1);
+        font-family: $font-basico;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-md;
+        color: $negro;
+        padding: 1rem;
+        // font-size: 0.8rem;
+        // min-height: 35Vh;
+    }
+    
+    .portada {
+        font-size: 1.5rem;
+        // background-color: rgba(214, 214, 214, 0);
+    }
+    
+    .jumbo_festival {
+        background-image: url(../img/fondo_zoom1.png)!important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        height: 100hv;
+        width: 100vw;
+    }
+    
+    .jumbo_romina {
+        background-image: url(../img/romina-fondo.png)!important;
+        // background-image: url(../img/romina.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        height: 100%;
+        // background-color: rgba(234, 0, 255, 0.829);
+        // width: 100vw;
+    }
+    
+    // .romina {
+    //     height: 80vh;
+    //     margin-left: -50px;
+    // }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        //Video
+        #myVideo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-height: 100%;
+            z-index: -99;
+        }
+        .contenedor__video {
+            left: 0;
+        }
+        //Logo y Texto
+        .logo__header {
+            width: 70%;
+        }
+        .texto__principal {
+            width: 50vw;
+            font-size: $font-size-md;
+            padding: 3rem;
+            // height: 100%;
+        }
+        .texto__bajada {
+            font-size: 1rem;
+        }
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .texto__principal {
+            width: 50vw;
+            font-size: $font-size-lg;
+        }
+        .texto__bajada {
+            font-size: 1rem;
+        }
+        .portada {
+            font-size: 1.8rem!important;
+            // background-color: rgba(214, 214, 214, 0);
+        }
+        .titulo__seccion {
+            font-size: 60px;
+        }
+    }
